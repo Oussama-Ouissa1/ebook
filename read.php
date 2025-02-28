@@ -64,7 +64,7 @@ if (isset($_POST['update'])) {
                 <p class="text-gray-600 text-sm mb-4"><?= htmlspecialchars($user['description']) ?></p>
                 <p class="text-blue-800 text-sm mb-4"><?= htmlspecialchars($user['auteur']) ?></p>
                 <div class="flex items-center justify-between">
-                    <button class="bg-zinc-500 hover:bg-zinc-600 text-white font-bold py-2 px-4 rounded" onclick="openModal(<?= $user['id'] ?>)" type="button">
+                    <button class="bg-zinc-500 hover:bg-zinc-600 text-white font-bold py-2 px-4 rounded" onclick="openModal('<?= $user['id'] ?>', '<?= $user['name'] ?>')" type="button">
                         Amendment
                     </button>
                     <button class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
@@ -86,8 +86,3 @@ if (isset($_POST['update'])) {
     ?>
 </body>
 </html>
-
-
-
-
-
